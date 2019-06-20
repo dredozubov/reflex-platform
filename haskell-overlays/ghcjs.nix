@@ -65,6 +65,7 @@ self: super: {
 
   # These packages require doctest
   comonad = dontCheck super.comonad;
+  http-date = dontCheck super.http-date;
   http-types = dontCheck super.http-types;
   lens = disableCabalFlag (disableCabalFlag (dontCheck super.lens) "test-properties") "test-doctests";
   pgp-wordlist = dontCheck super.pgp-wordlist;
